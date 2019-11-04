@@ -29,7 +29,7 @@ Upload content to [Bomberman folder at GameDev Mallorca's Google Drive space](ht
 
 ### For dynamic content: static content integrated in the game
 Making pull requests to [this Git repository](https://github.com/gamedev-mallorca/bomberman)
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on the process for submitting pull requests.
+Please read [CONTRIBUTING.md](https://github.com/gamedev-mallorca/bomberman/blob/master/CONTRIB.md) for details on the process for submitting pull requests.
 
 If any doubt, please contact any community member using any of the opened channels available.
 
