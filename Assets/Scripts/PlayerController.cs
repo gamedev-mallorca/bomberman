@@ -5,18 +5,25 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public int speed;
+    public BombTimer bomb;
+    public int speed,bombPocket;
 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {   
     }
 
     // Update is called once per frame
     void Update()
     {
         float localSpeed = speed * Time.deltaTime;
+
+        if(Input.GetKey(KeyCode.Space) && bombPocket>0){
+            bombPocket--;
+            BombTimer clone=Instantiate<BombTimer>(bomb,transform.position,transform.rotation);
+            clone.player=this;
+            clone.bomb=clone;
+        }
 
         if (Input.GetKey(KeyCode.W))
         {
