@@ -22,7 +22,7 @@ public class BombTimer : MonoBehaviour
         Debug.Log(timer);
         if(timer<=0) {
             player.bombPocket++;
-            Object.Destroy(this);
+            Object.Destroy(this.gameObject);
         }
     }
 }
