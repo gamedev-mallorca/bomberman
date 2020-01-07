@@ -3802,6 +3802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11ca8b729c20e34aa9afd3ca27b3e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombPrefab: {fileID: 0}
+  bombPrefab: {fileID: 114861293777193286, guid: 18a7f06edf26a2e4eb5deabe1e39b8c7,
+    type: 3}
   speed: 5
   bombPocket: 1
