@@ -19,7 +19,6 @@ public class BombTimer : MonoBehaviour
     void Update()
     {
         timer-=Time.deltaTime;
-        Debug.Log(timer);
         if(timer<=0) {
             player.bombPocket++;
             Object.Destroy(this.gameObject);
