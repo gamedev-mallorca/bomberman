@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour
             Vector3 spawnPosition = getBombSpawnPosition();
             BombTimer bomb = Instantiate<BombTimer>(bombPrefab, spawnPosition, Quaternion.identity);
             bomb.player = this;
-            bomb.bomb = bomb;
         }
     }
 
