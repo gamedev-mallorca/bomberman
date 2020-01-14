@@ -7,9 +7,15 @@ public class PlayerController : MonoBehaviour
 {
 
     public BombTimer bombPrefab;
-    public int speed, bombPocket;
+    public int speed,bombPocket;
+    public KeyCode upKey;
+    public KeyCode leftKey;
+    public KeyCode rightKey;
+    public KeyCode downKey;
+    public KeyCode bombKey;
 
     private GameObject map;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,23 +28,24 @@ public class PlayerController : MonoBehaviour
     {
         float localSpeed = speed * Time.deltaTime;
 
-        if(Input.GetKey(KeyCode.Space)){
+
+        if(Input.GetKey(bombKey) && bombPocket>0){
             spawnBomb();
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(upKey))
         {
             transform.Translate(Vector3.up * localSpeed);
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(downKey))
         {
             transform.Translate(Vector3.down * localSpeed);
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(leftKey))
         {
             transform.Translate(Vector3.left * localSpeed);
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(rightKey))
         {
             transform.Translate(Vector3.right * localSpeed);
         }
