@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 281979195}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,7 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11ca8b729c20e34aa9afd3ca27b3e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 114861293777193286, guid: 18a7f06edf26a2e4eb5deabe1e39b8c7, type: 3}
+  bombPrefab: {fileID: 114861293777193286, guid: 18a7f06edf26a2e4eb5deabe1e39b8c7,
+    type: 3}
   speed: 5
   bombPocket: 1
   upKey: 273
@@ -227,7 +228,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.77220356, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -347,7 +348,7 @@ GameObject:
   - component: {fileID: 608229882}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3778,7 +3779,7 @@ GameObject:
   - component: {fileID: 1324500433}
   m_Layer: 0
   m_Name: Map
-  m_TagString: Untagged
+  m_TagString: map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3825,7 +3826,7 @@ GameObject:
   - component: {fileID: 2140315171}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3905,7 +3906,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.005527682, g: 0.9245283, b: 0.004360993, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3941,7 +3942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11ca8b729c20e34aa9afd3ca27b3e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 114861293777193286, guid: 18a7f06edf26a2e4eb5deabe1e39b8c7, type: 3}
+  bombPrefab: {fileID: 114861293777193286, guid: 18a7f06edf26a2e4eb5deabe1e39b8c7,
+    type: 3}
   speed: 5
   bombPocket: 1
   upKey: 119
